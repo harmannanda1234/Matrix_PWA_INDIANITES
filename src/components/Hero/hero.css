@@ -1,0 +1,135 @@
+/* Hero section with gradient background and scaling effect */
+.center {
+  background: linear-gradient(135deg, #db93ac, #ea8eab); /* Softer blue gradient */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 3rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  animation: scaleUp 1s ease-out forwards;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container */
+.image-container {
+  width: 40%;
+  margin-right: 2rem;
+}
+
+/* Text container */
+.text-container {
+  width: 60%;
+}
+
+/* Text animation for intro text */
+.intro {
+  font-family: "poppins"; /* Serif font for headings */
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: left;
+  margin: 0;
+  opacity: 0;
+  animation: fadeInText 1s ease-out forwards 0.5s;
+  line-height: 1.2;
+  color: #fff; /* White color for intro text */
+}
+
+/* Pad image sliding effect */
+.pad-image {
+  max-width: 100%;
+  height: 45rem;
+  margin-top: 2rem;
+  animation: slideIn 1s ease-out forwards;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 4rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.pad-image:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
+/* Details section */
+.details {
+  font-family: 'Open Sans', sans-serif; /* Sans-serif font for paragraphs */
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+  text-align: left;
+  opacity: 0;
+  animation: fadeInDetails 1s ease-out forwards 1s;
+}
+
+/* Highlight section */
+.highlight {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+  opacity: 0;
+  animation: fadeInDetails 1s ease-out forwards 1.2s;
+}
+
+/* Add subtle hover effect for interactivity */
+.center:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Add whitespace for better readability */
+.details, .highlight {
+  margin-bottom: 3rem;
+}
+
+/* Scaling effect on load */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Keyframes for text fading in */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sliding effect for pad image */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Fade-in effect for paragraphs */
+@keyframes fadeInDetails {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,23 @@
+.about {
+  padding: 20px;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.intro {
+  margin: 20px 0;
+  font-size: 2.2em;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333; /* Adjust text color */
+  padding-bottom: 2rem;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+}
+
+/* Add any additional styles for the cards if needed */

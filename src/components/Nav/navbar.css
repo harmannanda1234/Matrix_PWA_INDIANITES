@@ -1,0 +1,45 @@
+.navbar {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(to right, #434372, #8bc0ff); /* Adjust gradient colors as needed */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    
+  }
+  
+  .text1 {
+    display: flex; /* Center the logo or text */
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+  }
+  
+  .deskMenu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .deskMenuItem {
+    margin-right: 20px;
+    padding: 10px 15px;
+    color: #fff; /* White text for contrast */
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 600;
+  }
+  
+  .deskMenuItem:hover {
+    background-color: rgba(103, 110, 126, 0.087); /* Subtle hover effect */
+    border-radius: 4rem;
+    color: rgb(247, 0, 82);
+    /* color: #ff006f; */
+  }
+  
+  
